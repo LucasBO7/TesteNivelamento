@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|c:\\users\\lucas\\desktop\\testetecnico\\webscraping\\webscraping\\services\\fileservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|solutionrelative:webscraping\\services\\fileservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|c:\\users\\lucas\\desktop\\testetecnico\\webscraping\\webscraping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|solutionrelative:webscraping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|c:\\users\\lucas\\desktop\\testetecnico\\webscraping\\webscraping\\services\\driverengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|solutionrelative:webscraping\\services\\driverengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|c:\\users\\lucas\\desktop\\testetecnico\\webscraping\\webscraping\\services\\pdfmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70649B95-38B0-4A29-887C-CCC46BDC7FDD}|WebScraping\\WebScraping.csproj|solutionrelative:webscraping\\services\\pdfmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileServices.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Services\\FileServices.cs",
+              "RelativeDocumentMoniker": "WebScraping\\Services\\FileServices.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Services\\FileServices.cs",
+              "RelativeToolTip": "WebScraping\\Services\\FileServices.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T21:46:57.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Program.cs",
+              "RelativeDocumentMoniker": "WebScraping\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Program.cs",
+              "RelativeToolTip": "WebScraping\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:21:49.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PdfManager.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Services\\PdfManager.cs",
+              "RelativeDocumentMoniker": "WebScraping\\Services\\PdfManager.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Services\\PdfManager.cs",
+              "RelativeToolTip": "WebScraping\\Services\\PdfManager.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwCMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T20:09:47.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DriverEngine.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Services\\DriverEngine.cs",
+              "RelativeDocumentMoniker": "WebScraping\\Services\\DriverEngine.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\WebScraping\\WebScraping\\Services\\DriverEngine.cs",
+              "RelativeToolTip": "WebScraping\\Services\\DriverEngine.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwDsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:38:30.96Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

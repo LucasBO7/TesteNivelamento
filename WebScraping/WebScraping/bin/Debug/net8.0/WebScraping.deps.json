@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "WebScraping/1.0.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.30.0"
+        },
+        "runtime": {
+          "WebScraping.dll": {}
+        }
+      },
+      "Selenium.WebDriver/4.30.0": {
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebScraping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Selenium.WebDriver/4.30.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-POEESh6f408SNst9kT+mf4g9zVahIWXjo+/8qkjUt8dNRllD+am2Fdj30j5b54kpRIx5Nz2b08AREYvaOyQQMA==",
+      "path": "selenium.webdriver/4.30.0",
+      "hashPath": "selenium.webdriver.4.30.0.nupkg.sha512"
+    }
+  }
+}
