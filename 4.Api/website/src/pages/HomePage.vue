@@ -53,8 +53,8 @@ watch(searchText, (_newValue, _oldValue) => {
 <template>
   <div id="home-section">
     <div id="search-section">
-      <h1>Lista</h1>
-      <input v-model="searchText" class="input-style" type="text" placeholder="Pesquise algum dado...">
+      <h1>Operadoras de Saúde Ativas</h1>
+      <input v-model="searchText" class="input-style" type="text" placeholder="Pesquise por algum dado...">
     </div>
 
     <div class="header-line-card-container">

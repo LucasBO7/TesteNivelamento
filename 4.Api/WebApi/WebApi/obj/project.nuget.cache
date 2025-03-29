@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4gj9oZ76TJE=",
+  "dgSpecHash": "yBBl+i/62u4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\4.Api\\WebApi\\WebApi\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

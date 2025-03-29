@@ -495,11 +495,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\4.Api\\WebApi\\WebApi\\WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\WebApi.csproj",
+      "projectPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\4.Api\\WebApi\\WebApi\\WebApi.csproj",
       "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\obj\\",
+      "outputPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\4.Api\\WebApi\\WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
