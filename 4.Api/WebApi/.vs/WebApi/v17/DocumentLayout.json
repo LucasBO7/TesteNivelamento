@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\dtos\\responses\\getallregisteredoperationsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\dtos\\responses\\getallregisteredoperationsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\repositories\\registeredoperationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\repositories\\registeredoperationsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\services\\interfaces\\iregisteredoperationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\services\\interfaces\\iregisteredoperationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\services\\registeredoperationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\services\\registeredoperationsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\controllers\\registeredoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\registeredoperationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\dtos\\requests\\getregisteredoperationsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\dtos\\requests\\getregisteredoperationsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|c:\\users\\lucas\\desktop\\testetecnico\\api\\webapi\\webapi\\entities\\registeredoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39FEAA54-38E3-47A9-8326-003FC9C47354}|WebApi\\WebApi.csproj|solutionrelative:webapi\\entities\\registeredoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisteredOperationsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Repositories\\RegisteredOperationsRepository.cs",
+              "RelativeDocumentMoniker": "WebApi\\Repositories\\RegisteredOperationsRepository.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Repositories\\RegisteredOperationsRepository.cs",
+              "RelativeToolTip": "WebApi\\Repositories\\RegisteredOperationsRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwBcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:00:46.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetRegisteredOperationsRequest.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\DTOs\\Requests\\GetRegisteredOperationsRequest.cs",
+              "RelativeDocumentMoniker": "WebApi\\DTOs\\Requests\\GetRegisteredOperationsRequest.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\DTOs\\Requests\\GetRegisteredOperationsRequest.cs",
+              "RelativeToolTip": "WebApi\\DTOs\\Requests\\GetRegisteredOperationsRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:29:52.892Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetAllRegisteredOperationsResponse.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\DTOs\\Responses\\GetAllRegisteredOperationsResponse.cs",
+              "RelativeDocumentMoniker": "WebApi\\DTOs\\Responses\\GetAllRegisteredOperationsResponse.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\DTOs\\Responses\\GetAllRegisteredOperationsResponse.cs",
+              "RelativeToolTip": "WebApi\\DTOs\\Responses\\GetAllRegisteredOperationsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:19:55.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IRegisteredOperationsService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Services\\Interfaces\\IRegisteredOperationsService.cs",
+              "RelativeDocumentMoniker": "WebApi\\Services\\Interfaces\\IRegisteredOperationsService.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Services\\Interfaces\\IRegisteredOperationsService.cs",
+              "RelativeToolTip": "WebApi\\Services\\Interfaces\\IRegisteredOperationsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:20:00.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\appsettings.json",
+              "RelativeToolTip": "WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-29T17:25:15.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisteredOperationsService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Services\\RegisteredOperationsService.cs",
+              "RelativeDocumentMoniker": "WebApi\\Services\\RegisteredOperationsService.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Services\\RegisteredOperationsService.cs",
+              "RelativeToolTip": "WebApi\\Services\\RegisteredOperationsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:04:53.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisteredOperationsController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Controllers\\RegisteredOperationsController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\RegisteredOperationsController.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Controllers\\RegisteredOperationsController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\RegisteredOperationsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T00:54:24.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RegisteredOperations.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Entities\\RegisteredOperations.cs",
+              "RelativeDocumentMoniker": "WebApi\\Entities\\RegisteredOperations.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\Api\\WebApi\\WebApi\\Entities\\RegisteredOperations.cs",
+              "RelativeToolTip": "WebApi\\Entities\\RegisteredOperations.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T17:08:07.506Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

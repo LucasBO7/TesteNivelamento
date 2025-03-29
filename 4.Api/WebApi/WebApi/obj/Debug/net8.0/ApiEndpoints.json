@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "WebApi.Controllers.RegisteredOperationsController",
+    "Method": "GetRegisteredOperations",
+    "RelativePath": "api/RegisteredOperations/SearchAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SearchText",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
