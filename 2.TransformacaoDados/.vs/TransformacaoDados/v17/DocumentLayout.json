@@ -1,17 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\",
+  "WorkspaceRootPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|c:\\users\\lucas\\desktop\\testetecnico\\transformacaodados\\transformacaodados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|c:\\users\\lucas\\desktop\\testetecnico\\2.transformacaodados\\transformacaodados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|solutionrelative:transformacaodados\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|c:\\users\\lucas\\desktop\\testetecnico\\transformacaodados\\transformacaodados\\azureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|c:\\users\\lucas\\desktop\\testetecnico\\2.transformacaodados\\transformacaodados\\testthree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|solutionrelative:transformacaodados\\testthree.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|c:\\users\\lucas\\desktop\\testetecnico\\2.transformacaodados\\transformacaodados\\azureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|solutionrelative:transformacaodados\\azureservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|c:\\users\\lucas\\desktop\\testetecnico\\transformacaodados\\transformacaodados\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|c:\\users\\lucas\\desktop\\testetecnico\\2.transformacaodados\\transformacaodados\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DAD656A8-9725-45EB-8080-5A09651F5753}|TransformacaoDados\\TransformacaoDados.csproj|solutionrelative:transformacaodados\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,30 +26,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TestThree.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\TestThree.cs",
+              "RelativeDocumentMoniker": "TransformacaoDados\\TestThree.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\TestThree.cs",
+              "RelativeToolTip": "TransformacaoDados\\TestThree.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T23:31:44.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AzureService.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\AzureService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\AzureService.cs",
               "RelativeDocumentMoniker": "TransformacaoDados\\AzureService.cs",
-              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\AzureService.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\AzureService.cs",
               "RelativeToolTip": "TransformacaoDados\\AzureService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T19:57:46.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PdfService.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\PdfService.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\PdfService.cs",
               "RelativeDocumentMoniker": "TransformacaoDados\\PdfService.cs",
-              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\PdfService.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\PdfService.cs",
               "RelativeToolTip": "TransformacaoDados\\PdfService.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAIAzwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T01:20:29.093Z",
               "EditorCaption": ""
@@ -54,11 +71,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\Program.cs",
               "RelativeDocumentMoniker": "TransformacaoDados\\Program.cs",
-              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\Program.cs",
+              "ToolTip": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\Program.cs",
               "RelativeToolTip": "TransformacaoDados\\Program.cs",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAgwBABAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAKEAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T00:45:08.146Z",
               "EditorCaption": ""

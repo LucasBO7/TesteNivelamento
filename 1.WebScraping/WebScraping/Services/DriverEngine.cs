@@ -10,26 +10,20 @@ internal class DriverEngine : IDisposable
     public DriverEngine()
     {
         var chromeOptions = new ChromeOptions();
+        chromeOptions.AddArgument("--headless=new");
 
-        // Método 1: Desabilitar logs do Chrome
+        #region Desabilita_Logs
         chromeOptions.AddArgument("--disable-logging");
-        chromeOptions.AddArgument("--log-level=3"); // Apenas erros críticos
-
-        // Método 2: Suprimir logs do ChromeDriver
+        chromeOptions.AddArgument("--log-level=3");
         var chromeDriverService = ChromeDriverService.CreateDefaultService();
         chromeDriverService.SuppressInitialDiagnosticInformation = true;
         chromeDriverService.HideCommandPromptWindow = true;
-
-        // Desabilitar logs de saída padrão
         chromeDriverService.EnableVerboseLogging = false;
-
-        // Redirecionar logs para um arquivo de texto ou para null
-        chromeDriverService.LogPath = "nul"; // No Windows
-                                             // chromeDriverService.LogPath = "/dev/null"; // No Linux/Mac
-
-        // Configurações adicionais para minimizar logs
+        chromeDriverService.LogPath = "nul"; // Windows
+        chromeDriverService.LogPath = "/dev/null"; // Linux/Mac
         chromeOptions.AddArgument("--no-sandbox");
         chromeOptions.AddArgument("--disable-dev-shm-usage");
+        #endregion
 
         _driver = new ChromeDriver(chromeDriverService, chromeOptions);
     }

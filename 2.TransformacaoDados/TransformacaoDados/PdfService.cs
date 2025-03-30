@@ -9,7 +9,7 @@ internal class PdfService
     public int counter = 1;
     public Dictionary<int, List<Word>> words = [];
 
-    public void ExtractDataFromPages(PdfDocument document)
+    public void ExtractDataFromPages(UglyToad.PdfPig.PdfDocument document)
     {
         foreach (var page in document.GetPages())
         {

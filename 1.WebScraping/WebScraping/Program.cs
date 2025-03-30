@@ -3,7 +3,6 @@
 DriverEngine driverEngine = new();
 PdfManager pdfManager = new();
 
-// Abre o site
 driverEngine.OpenWebsite("https://www.gov.br/ans/pt-br/acesso-a-informacao/participacao-da-\r\nsociedade/atualizacao-do-rol-de-procedimentos");
 
 // Aceita os cookies
@@ -16,10 +15,12 @@ anexosXPath["Anexo2"] = "//*[@id=\"cfec435d-6921-461f-b85a-b425bc3cb4a5\"]/div/o
 
 foreach (var anexoXPath in anexosXPath)
 {
+    int filesCount = 1;
+
     string anexoLinkUrl = driverEngine.GetHrefLink(anexoXPath.Value);
     pdfManager.SetFileName(anexoXPath.Key);
 
-    await pdfManager.DownloadPdfFromUrl(anexoLinkUrl);
+    await pdfManager.DownloadPdfFromUrl(anexoLinkUrl, 1);
 }
 
 driverEngine.Dispose();

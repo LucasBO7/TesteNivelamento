@@ -20,7 +20,6 @@ CREATE TABLE [1T2024] (
 	VL_SALDO_INICIAL DECIMAL(18, 2) NOT NULL,
 	VL_SALDO_FINAL DECIMAL(18, 2) NOT NULL
 );
-
 	CREATE TABLE #TempTabela (
 		Coluna1 VARCHAR(255), -- DATA
 		Coluna2 VARCHAR(255), -- REG_ANS
@@ -59,7 +58,6 @@ CREATE TABLE [1T2024] (
 		TRY_CONVERT(DECIMAL(18,2), REPLACE(Coluna6, ',', '.'))
 	FROM #TempTabela;
 	GO
-
 	DROP TABLE #TempTabela;
 GO
 
@@ -221,7 +219,6 @@ GO
 
 
 -- Relatorio_Cadop FILE
-
 CREATE TABLE Relatorio_Cadop
 (
 	[ID] UNIQUEIDENTIFIER PRIMARY KEY,
@@ -229,7 +226,7 @@ CREATE TABLE Relatorio_Cadop
 	CNPJ CHAR(14),
 	Nome_Fantasia VARCHAR(140),
 	Razao_Social VARCHAR(140),
-	Modalidade VARCHAR(2),
+	Modalidade VARCHAR(50),
 	Logradouro VARCHAR(40),
 	Numero INT,
 	Complemento VARCHAR(40),
@@ -246,51 +243,38 @@ CREATE TABLE Relatorio_Cadop
 	Regiao_de_Comercializacao INT,
 	Data_Registro_ANS DATE
 );
-
-
-
 	CREATE TABLE #TempTabelarRelatorioCadop (
-		Registro_ANS VARCHAR(200) NULL,
-		CNPJ VARCHAR(200) NULL,
-		Razao_Social VARCHAR(200) NULL, -- Corrigido: Razao_Social antes de Nome_Fantasia
-		Nome_Fantasia VARCHAR(200) NULL,
-		Modalidade VARCHAR(200) NULL, -- Corrigido: Aumentado para caber valores grandes
-		Logradouro VARCHAR(200) NULL,
-		Numero VARCHAR(200) NULL,
-		Complemento VARCHAR(200) NULL,
-		Bairro VARCHAR(200) NULL,
-		Cidade VARCHAR(200) NULL,
-		UF VARCHAR(200) NULL, -- Corrigido: UF tem 2 caracteres fixos
-		CEP VARCHAR(200) NULL,
-		DDD VARCHAR(200) NULL,
-		Telefone VARCHAR(200) NULL,
-		Fax VARCHAR(200) NULL, -- Corrigido: Permitir NULL
-		Endereco_eletronico VARCHAR(255) NULL,
-		Representante VARCHAR(200) NULL,
-		Cargo_Representante VARCHAR(200) NULL,
-		Regiao_de_Comercializacao INT NULL,
-		Data_Registro_ANS DATE NULL -- Corrigido: Agora é DATE
+		[Registro_ANS] [varchar](50) NULL,
+		[CNPJ] [varchar](50) NULL,
+		[Razao_Social] [varchar](150) NULL,
+		[Nome_Fantasia] [varchar](150) NULL,
+		[Modalidade] [varchar](50) NULL,
+		[Logradouro] [varchar](50) NULL,
+		[Numero] [varchar](50) NULL,
+		[Complemento] [varchar](50) NULL,
+		[Bairro] [varchar](50) NULL,
+		[Cidade] [varchar](50) NULL,
+		[UF] [varchar](50) NULL,
+		[CEP] [varchar](50) NULL,
+		[DDD] [varchar](50) NULL,
+		[Telefone] [varchar](50) NULL,
+		[Fax] [varchar](50) NULL,
+		[Endereco_eletronico] [varchar](50) NULL,
+		[Representante] [varchar](50) NULL,
+		[Cargo_Representante] [varchar](50) NULL,
+		[Regiao_de_Comercializacao] [varchar](50) NULL,
+		[Data_Registro_ANS] [varchar](50) NULL
 	);
-
-
-
 		BULK INSERT #TempTabelarRelatorioCadop
 		FROM  'C:\Users\lucas\Downloads\Files\Relatorio_cadop.csv'
 		WITH (
 			FORMAT = 'CSV',
 			FIELDTERMINATOR = ';', 
-			ROWTERMINATOR = '\n', 
+			ROWTERMINATOR = '0x0A', 
 			FIRSTROW = 2, -- Ignora cabeçalho
 			CODEPAGE = '65001' -- Para suporte UTF-8
 		);
-
-		INSERT INTO #TempTabelarRelatorioCadop
-		SELECT * FROM OPENROWSET(
-			BULK 'C:\Users\lucas\Downloads\Files\Relatorio_cadop.csv',
-			FORMATFILE = 'C:\path\to\format_file.fmt',
-			CODEPAGE = '65001'
-		) AS temp
-
+		DROP TABLE #TempTabelarRelatorioCadop;
 
 		INSERT INTO [Relatorio_Cadop] (
 			[ID],
@@ -340,19 +324,16 @@ CREATE TABLE Relatorio_Cadop
 GO
 
 
-
-
 -- DQL - Data Query Language
-USE TesteNivelamento
 SELECT * FROM [1T2024]
 
--- Quais as 10 operadoras com maiores despesas em "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" no último trimestre?
+-- 10 operadoras com maiores depesas em "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" no último semestre
 SELECT TOP 10
 	ID, [DATA], REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, (VL_SALDO_FINAL - VL_SALDO_INICIAL) AS DESPESA, VL_SALDO_FINAL, VL_SALDO_INICIAL
 FROM [1T2024]
 ORDER BY DESPESA
 
--- Quais as 10 operadoras com maiores despesas nessa categoria no último ano?
+-- 10 operadoras com maiores despesas em "EVENTOS/ SINISTROS CONHECIDOS OU AVISADOS DE ASSISTÊNCIA A SAÚDE MEDICO HOSPITALAR" no último ano?
 SELECT TOP 10 * FROM(
 	SELECT ID, [DATA], REG_ANS, CD_CONTA_CONTABIL, DESCRICAO, (VL_SALDO_FINAL - VL_SALDO_INICIAL) AS DESPESA, VL_SALDO_FINAL, VL_SALDO_INICIAL FROM [1T2024]
 	UNION ALL

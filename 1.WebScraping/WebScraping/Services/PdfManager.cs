@@ -17,7 +17,7 @@ internal class PdfManager
         FileName = fileName;
     }
 
-    public async Task DownloadPdfFromUrl(string url)
+    public async Task DownloadPdfFromUrl(string url, int currentPdfCount)
     {
         using HttpClient client = new();
 
@@ -25,13 +25,14 @@ internal class PdfManager
 
         FileServices.CreateFolder(FolderPath);
 
-        Console.WriteLine("Baixando PDF...");
+        Console.WriteLine($"Baixando PDF ({currentPdfCount}/2)...");
         var pdfBytes = await client.GetByteArrayAsync(url);
 
         string fullFilePath = Path.Combine(FolderPath, $"{FileName}.pdf");
 
         await File.WriteAllBytesAsync(fullFilePath!, pdfBytes);
 
-        Console.WriteLine("PDF baixado com sucesso em: " + fullFilePath);
+        Console.WriteLine($"PDF ({currentPdfCount}/2) baixado com sucesso!");
+        currentPdfCount++;
     }
 }

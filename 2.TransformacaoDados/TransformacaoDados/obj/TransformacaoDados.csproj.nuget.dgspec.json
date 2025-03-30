@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj": {}
+    "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj": {
+    "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj",
+        "projectUniqueName": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj",
         "projectName": "TransformacaoDados",
-        "projectPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj",
+        "projectPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\TransformacaoDados.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\TransformacaoDados\\TransformacaoDados\\obj\\",
+        "outputPath": "C:\\Users\\lucas\\Desktop\\TesteTecnico\\2.TransformacaoDados\\TransformacaoDados\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -62,6 +62,10 @@
               "target": "Package",
               "version": "[33.0.1, )"
             },
+            "IronPdf": {
+              "target": "Package",
+              "version": "[2025.3.6, )"
+            },
             "PdfPig": {
               "target": "Package",
               "version": "[0.1.10, )"
@@ -81,6 +85,14 @@
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[9.0.3, )"
+            },
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            },
+            "Tesseract.Drawing": {
+              "target": "Package",
+              "version": "[5.2.0, )"
             }
           },
           "imports": [
