@@ -1,58 +1,15 @@
-﻿//using System.Formats.Asn1;
-//using System.Globalization;
-//using System.Reflection.Metadata;
-//using System.Text.RegularExpressions;
-//using System.Xml.Linq;
-//using TransformacaoDados;
-//using UglyToad.PdfPig;
-
-using System;
-using System.IO;
+﻿using System.Globalization;
+using System.Text.RegularExpressions;
 using Tesseract;
 using CsvHelper;
-using System.Globalization;
-using UglyToad.PdfPig;
 using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
 using PdfiumViewer;
 using System.Drawing;
-using Tesseract;
-using UglyToad.PdfPig.DocumentLayoutAnalysis.TextExtractor;
 using PdfDocument = UglyToad.PdfPig.PdfDocument;
-using System.Text.RegularExpressions;
 using CsvHelper.Configuration;
 
 Console.Write("Insira o caminho o qual o arquivo está localizado: ");
 string pdfFilePath = Console.ReadLine()!;
-
-//string[] imagePaths = { "image1.png", "image2.png", "image3.png" }; // Substitua pelos caminhos reais
-//List<string> extractedData = new List<string>();
-
-//using (var engine = new TesseractEngine("./tessdata", "eng", EngineMode.Default))
-//{
-//    foreach (var imagePath in imagePaths)
-//    {
-//        using (var img = Pix.LoadFromFile(imagePath))
-//        {
-//            using (var page = engine.Process(img))
-//            {
-//                extractedData.Add(page.GetText());
-//            }
-//        }
-//    }
-//}
-
-//SaveToCsv(extractedData);
-//static void SaveToCsv(List<string> data)
-//{
-//    using (var writer = new StreamWriter("output.csv"))
-//    using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
-//    {
-//        csv.WriteRecords(data);
-//    }
-//    Console.WriteLine("CSV gerado com sucesso!");
-//}
-
-//string pdfPath = "documento.pdf"; // Caminho do PDF
 
 pdfFilePath = @"C:\Users\lucas\Documents\WebScraping_Downloads\compactacoes\anexosCompactados_204007\arquivos_pdfs\anexos202809\Anexo1.pdf";
 string outputCsvPath = "C:\\Users\\lucas\\Desktop\\output.csv";
@@ -62,7 +19,6 @@ string text = ExtractTextWithOCR(pdfFilePath, pageNumber);
 Console.WriteLine("Texto extraído da página " + pageNumber + ":");
 Console.WriteLine(text);
 
-// Definir o delimitador como ponto e vírgula
 var config = new CsvConfiguration(CultureInfo.InvariantCulture)
 {
     Delimiter = ";",
@@ -91,24 +47,20 @@ using (var csv = new CsvWriter(writer, config))
     // Processa apenas a página específica
     using (var pdf = PdfDocument.Open(pdfFilePath))
     {
-        var page = pdf.GetPage(pageNumber - 1); // Lembre-se que a indexação começa de 0
+        var page = pdf.GetPage(pageNumber - 1);
         string extractedText = ContentOrderTextExtractor.GetText(page);
 
-        if (string.IsNullOrWhiteSpace(extractedText)) // Se não há texto, usar OCR
+        if (string.IsNullOrWhiteSpace(extractedText))
         {
             extractedText = ExtractTextWithOCR(pdfFilePath, pageNumber);
         }
 
-        // Remover a parte da legenda (tudo após "Legenda:" até o fim da lista)
         extractedText = RemoveLegenda(extractedText);
 
-        // Processar cada linha da tabela
         var tableRows = ProcessTableRows(extractedText);
 
-        // Escrever as linhas extraídas da tabela no CSV
         foreach (var row in tableRows)
         {
-            // Adiciona os dados da linha ao CSV
             csv.WriteField($"Página {pageNumber}");
             csv.WriteField(row.Procedimento);
             csv.WriteField(row.RnAlteracao);
@@ -130,7 +82,6 @@ using (var csv = new CsvWriter(writer, config))
 
 Console.WriteLine("Conversão concluída. Arquivo salvo como output.csv.");
 
-// Função para remover a parte da "Legenda" do texto
 static string RemoveLegenda(string extractedText)
 {
     // Regex para remover a legenda, começando após a palavra "Legenda:"
@@ -148,7 +99,6 @@ static List<TableRow> ProcessTableRows(string text)
 
     foreach (Match match in Regex.Matches(text, tableRowPattern, RegexOptions.Singleline))
     {
-        // A ordem dos grupos aqui vai depender do seu formato exato de tabela, faça os ajustes conforme necessário
         var row = new TableRow
         {
             Procedimento = match.Groups[1].Value.Trim(),
@@ -180,10 +130,8 @@ static string ExtractTextWithOCR(string pdfPath, int pageNumber)
     {
         using (var img = pdfDoc.Render(pageNumber - 1, 300, 300, PdfRenderFlags.Grayscale))
         {
-            // Convertendo a imagem para Pix
             using (var pix = BitmapToPix((Bitmap)img))
             {
-                // Usando o Tesseract para extrair o texto da imagem
                 using (var ocrEngine = new TesseractEngine(@"./tessdata", "por", EngineMode.Default))
                 {
                     return ocrEngine.Process(pix).GetText();
@@ -297,14 +245,12 @@ class TableRow
 //                    continue;
 //                }
 
-//                // Extrai texto por palavra para preservar espaçamento
 //                var palavras = pagina.GetWords()
 //                    .OrderBy(w => w.BoundingBox.Bottom)
 //                    .ThenBy(w => w.BoundingBox.Left)
 //                    .Select(w => w.Text)
 //                    .ToList();
 
-//                // Identificar cabeçalhos e linhas de dados
 //                var linhasDados = IdentificarLinhasDeDados(palavras);
 
 //                linhasDados.ForEach(l => Console.WriteLine(l));
@@ -338,7 +284,7 @@ class TableRow
 //                linhas[i].Contains("RN") &&
 //                linhas[i].Contains("VIGÊNCIA"))
 //            {
-//                return i + 1; // Próxima linha após o cabeçalho
+//                return i + 1;
 //            }
 //        }
 //        return -1;
@@ -362,17 +308,15 @@ class TableRow
 
 //        if (indiceInicio == -1) return linhasDados;
 
-//        // Processar linhas de dados
 //        for (int i = indiceInicio + cabeçalhoEsperado.Length; i < palavras.Count; i++)
 //        {
 //            // Condições para identificar uma linha de dados
 //            if (EhLinhaDeDados(palavras.Skip(i).Take(5).ToList()))
 //            {
-//                // Montar linha concatenando palavras
 //                var linha = string.Join(" ", palavras.Skip(i).Take(10));
 //                linhasDados.Add(linha);
 
-//                // Pular palavras já processadas
+//                // Pular palavra já processadas
 //                i += 9;
 //            }
 //        }
@@ -434,32 +378,24 @@ class TableRow
 
 try
 {
-    // Caminho do seu arquivo PDF
     string pdfPath = pdfFilePath;
 
-    // Número da página que você quer extrair (por exemplo, página 1)
     int pageNumber = 4;
 
-    // Converte a página do PDF em imagem
     string imagePath = AzureService.ConvertPdfPageToImage(pdfPath, pageNumber);
 
-    // Lista para armazenar as linhas extraídas
     List<string> extractedLines = new List<string>();
 
-    // Configurar o cliente Azure Vision
     var credentials = new AzureKeyCredential(AzureService.Key);
     var client = new ImageAnalysisClient(new Uri(AzureService.EndPoint), credentials);
 
-    // Carregar a imagem
     using FileStream stream = new(imagePath, FileMode.Open);
 
-    // Configurar opções do OCR
     var options = new ImageAnalysisOptions()
     {
         GenderNeutralCaption = true
     };
 
-    // Processar a imagem
     ImageAnalysisResult result = client.Analyze(BinaryData.FromStream(stream), VisualFeatures.Read);
 
     // Coletar linhas extraídas
@@ -534,17 +470,15 @@ public class TextExtractor
 
         foreach (var line in extractedLines)
         {
-            // Lógica para identificar diferentes tipos de linhas
             if (IsCapitulo(line))
             {
-                // Nova entrada
                 if (currentProcedimento != null)
                 {
                     procedimentos.Add(currentProcedimento);
                 }
                 currentProcedimento = new ProcedimentoSaude { Capitulo = line };
             }
-            else if (currentProcedimento != null) // Adicione esta verificação
+            else if (currentProcedimento != null)
             {
                 if (IsGrupo(line))
                 {
@@ -573,8 +507,6 @@ public class TextExtractor
             }
             else
             {
-                // Se nenhuma categoria for identificada e currentProcedimento for null, 
-                // crie uma nova entrada com a linha atual
                 currentProcedimento = new ProcedimentoSaude
                 {
                     Procedimento = line
@@ -582,13 +514,11 @@ public class TextExtractor
             }
         }
 
-        // Adicionar o último procedimento
         if (currentProcedimento != null)
         {
             procedimentos.Add(currentProcedimento);
         }
 
-        // Exportar para CSV
         using (var writer = new StreamWriter(outputPath, false, Encoding.UTF8))
         using (var csv = new CsvWriter(writer, new CsvConfiguration(CultureInfo.InvariantCulture)))
         {
@@ -600,7 +530,6 @@ public class TextExtractor
     }
 
 
-    // Métodos de identificação (você precisará ajustar conforme a estrutura exata do seu texto)
     private static bool IsCapitulo(string line) =>
         line.Contains("CAPÍTULO", StringComparison.OrdinalIgnoreCase);
 
@@ -640,20 +569,20 @@ public class TextExtractor
 //OPÇÃO 2
 //using (StreamWriter writer = new StreamWriter("C:\\Users\\lucas\\Documents\\saida.csv"))
 //{
-//    writer.WriteLine("Procedimento;RN Alteração;Vigência;OD;AMB;HCO;HSO;REF;PAC;DUT;Subgrupo;Grupo;Capítulo;"); // Cabeçalho do CSV
+//    writer.WriteLine("Procedimento;RN Alteração;Vigência;OD;AMB;HCO;HSO;REF;PAC;DUT;Subgrupo;Grupo;Capítulo;");
 
 //    foreach (var page in pdfDocument.GetPages())
 //    {
-//        string[] lines = page.Text.Split('\n'); // Divide o texto em linhas
+//        string[] lines = page.Text.Split('\n');
 
 //        foreach (string line in lines)
 //        {
 //            // Supondo que os dados estejam separados por múltiplos espaços
 //            var columns = line.Split(new[] { "  " }, StringSplitOptions.RemoveEmptyEntries);
 
-//            if (columns.Length > 1) // Filtra linhas com informações úteis
+//            if (columns.Length > 1)
 //            {
-//                string csvLine = string.Join(";", columns.Select(c => c.Trim())); // Junta as colunas separadas por ";"
+//                string csvLine = string.Join(";", columns.Select(c => c.Trim()));
 //                writer.WriteLine(csvLine);
 //            }
 //        }
@@ -663,7 +592,7 @@ public class TextExtractor
 //foreach (var page in pdfDocument.GetPages())
 //{
 //    string text = page.Text;
-//    Console.WriteLine(text); // Aqui você pode processar o texto conforme necessário
+//    Console.WriteLine(text);
 //}
 
 //pdfService.ExtractDataFromPages(pdfDocument);
