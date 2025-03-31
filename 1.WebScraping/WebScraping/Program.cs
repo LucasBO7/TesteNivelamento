@@ -15,8 +15,6 @@ anexosXPath["Anexo2"] = "//*[@id=\"cfec435d-6921-461f-b85a-b425bc3cb4a5\"]/div/o
 
 foreach (var anexoXPath in anexosXPath)
 {
-    int filesCount = 1;
-
     string anexoLinkUrl = driverEngine.GetHrefLink(anexoXPath.Value);
     pdfManager.SetFileName(anexoXPath.Key);
 

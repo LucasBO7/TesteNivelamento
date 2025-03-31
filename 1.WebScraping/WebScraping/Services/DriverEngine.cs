@@ -11,19 +11,16 @@ internal class DriverEngine : IDisposable
     {
         var chromeOptions = new ChromeOptions();
         chromeOptions.AddArgument("--headless=new");
-
-        #region Desabilita_Logs
         chromeOptions.AddArgument("--disable-logging");
         chromeOptions.AddArgument("--log-level=3");
+
         var chromeDriverService = ChromeDriverService.CreateDefaultService();
         chromeDriverService.SuppressInitialDiagnosticInformation = true;
         chromeDriverService.HideCommandPromptWindow = true;
         chromeDriverService.EnableVerboseLogging = false;
         chromeDriverService.LogPath = "nul"; // Windows
-        chromeDriverService.LogPath = "/dev/null"; // Linux/Mac
         chromeOptions.AddArgument("--no-sandbox");
         chromeOptions.AddArgument("--disable-dev-shm-usage");
-        #endregion
 
         _driver = new ChromeDriver(chromeDriverService, chromeOptions);
     }

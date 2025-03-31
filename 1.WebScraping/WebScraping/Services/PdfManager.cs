@@ -21,18 +21,16 @@ internal class PdfManager
     {
         using HttpClient client = new();
 
-        Console.WriteLine(FolderPath);
-
         FileServices.CreateFolder(FolderPath);
 
-        Console.WriteLine($"Baixando PDF ({currentPdfCount}/2)...");
+        Console.WriteLine($"Baixando PDF...");
         var pdfBytes = await client.GetByteArrayAsync(url);
 
         string fullFilePath = Path.Combine(FolderPath, $"{FileName}.pdf");
 
         await File.WriteAllBytesAsync(fullFilePath!, pdfBytes);
 
-        Console.WriteLine($"PDF ({currentPdfCount}/2) baixado com sucesso!");
-        currentPdfCount++;
+        Console.WriteLine($"PDF baixado com sucesso!");
+        Console.WriteLine();
     }
 }

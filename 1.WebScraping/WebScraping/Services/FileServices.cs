@@ -37,7 +37,7 @@ internal static class FileServices
             CreateFolder(generatedFolderPath);
             File.Move(filePath, Path.Combine(generatedFolderPath, Path.GetFileName(filePath)));
 
-            Console.WriteLine($"Arquivo salvo: {filePath}");
+            Console.WriteLine($"Arquivo {Path.GetFileName(filePath)} salvo!");
         }
     }
 

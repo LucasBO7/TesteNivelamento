@@ -131,8 +131,4 @@ li {
   color: #e7e7e7;
 
 }
-
-/* .header-line-card-container>* {
-  color: #e7e7e7;
-} */
 </style>
