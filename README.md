@@ -1,6 +1,9 @@
 # Teste de nivelamento
 Versionamento do teste de nivelamento apresentado pela empresa IntuitiveCare durante o processo seletivo para Estágio em Engenharia de Software.
 
+### Orientação de execução
+Para executar o teste 4, será necessário alterar a porta conforme o usuário no projeto 'website'. A modificação deve ser feita no arquivo: src/services/service.ts"
+
 ## 1. Teste de Web Scraping ##
 ### 📥 Orientação
 Foi desenvolvido em uma aplicação console simples um sistema que conforme orientado...
